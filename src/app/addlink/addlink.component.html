@@ -1,0 +1,17 @@
+<div>
+  <br/>
+  <form>
+  <div style="text-align:left">
+    <label for="link">Enter link address:</label>
+    <input type="text" [(ngModel)]="link" id="link" class="form-control" name="link" required>
+  </div>
+  <br/>
+  <div style="text-align:left">
+      <label for="wname">Enter website name:</label>
+      <input type="text" [(ngModel)]="wname" id="wname" class="form-control" name="wname" required>
+  </div>
+  <br/>
+  <button (click)="navigateToDashboard()" class="btn">Back</button>
+  <input type="submit" (click)="addLink()" value="Add" class="btn">
+  </form>
+</div>

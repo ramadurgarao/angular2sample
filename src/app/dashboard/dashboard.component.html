@@ -1,0 +1,8 @@
+<div>
+  <ul class="list-group">
+    <li *ngFor="let link of links" class="list-group-item">
+      <a [href]="link.link" [innerHTML]="link.websiteName" target="_blank"></a>
+    </li>
+  </ul>
+  <button class="btn" routerLink="/addlink">Add link</button>
+</div>
